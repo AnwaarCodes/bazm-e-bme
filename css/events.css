@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    scrollbar-width: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    background-color: #fff;
+}
+
+.nav-logo img {
+    height: 120px;
+    width: 150px;
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.navbar-menu-icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar-menu-icon input {
+    display: none;
+}
+
+.navbar-menu-icon span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    right: 5%;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+}
+
+.navbar-menu-icon span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+
+.navbar-menu-icon span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+}
+
+.navbar-menu-icon span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+}
+
+.navbar-menu-icon input:checked~span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+}
+
+.navbar-menu-icon input:checked~span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.navbar-menu-icon input:checked~span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-right: 270px;
+
+}
+
+.nav-list li {
+    margin: 0 25px;
+}
+
+.nav-list a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.07rem;
+    font-family: "PT Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nav-list .list-item::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 1px;
+    right: 0;
+    background: #000;
+    transition: width 0.4s ease;
+}
+
+.nav-list .list-item:hover::after {
+    width: 100%;
+    left: 0;
+    background: #000;
+}
+
+.nav-buttons {
+    position: absolute;
+    right: 0%;
+    top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.nav-library-btn {
+    padding: 12px 28px;
+    border-radius: 50px;
+    background-color: #60c4a0;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: "PT Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+    border: 1px solid black;
+    box-shadow: #777;
+    letter-spacing: 0.5px;
+}
+
+.nav-signin-btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+    background-color: #d4b036;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: "PT Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+    border: 1px solid black;
+    box-shadow: #777;
+    letter-spacing: 0.8px;
+    transition: all 0.3s ease-in;
+}
+
+.nav-library-btn:hover {
+    background-color: #000;
+    color: rgb(163, 204, 82);
+    font-size: 0.88rem;
+    padding: 12px 28px;
+}
+
+.nav-signin-btn:hover {
+    background-color: #000;
+    color: #4cbb92;
+    /* padding: 11.5px 29px;
+    font-size: 0.88rem; */
+}
+
+.hover-items-hide {
+display: none;
+}
+
+.nav-hover-items {
+    color: #000;
+    width: 210px;
+    height: 270px;
+    background: transparent;
+    position: absolute;
+    z-index: 99;
+    margin-left: 350px;
+    transition: linear 0.5s ease-in-out;
+}
+
+ul {
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+    color: #000;
+}
+ul a:hover{
+    color: #a06119;
+}
+
+.nav-items {
+    margin-left: 30px;
+    padding-top: 30px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    z-index: 99;
+    background-color: #fff;
+    width: 250px;
+    height: 180px;
+    font-family: "PT Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+    transition: all 5s ease-in-out;
+}
+
+.nav-items .nav-list-item {
+    font-size: 1.1rem;
+}
+
+.nav-list-item:hover {
+    color: rgb(240, 202, 132);
+}
+
+
+.event-section{
+    width: 100vw;
+    min-height: 80vh;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+   width: 100%;
+   padding: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.events-container a{
+    text-decoration: none;
+    color: #000;
+}
+
+.event-card {
+    border: 1px solid #000;
+    width: 400px;
+    height: 400px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+
+.event-date {
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    padding-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.event-title {
+    font-size: 3.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    line-height: 65px;
+    font-family: "TiemposTextWeb", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.event-card-part{
+    gap: 10px;
+}
+.event-card-part hr{
+ width: 40px;
+ height: 6px;
+ background-color: #000;
+ margin-left: 30px;
+ border: none;
+}
+
+.event-title-2 {
+    padding-right: 15px;
+    font-size: 3rem;
+}
+
+.event-category {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #000;
+    padding-left: 40px;
+    font-family: "TiemposTextWeb", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding-bottom: 20px;
+}
+
+/* Hover Image Effect */
+.event-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+.event-card:hover p{
+ color: white;
+}
+.event-card:hover hr{
+    background-color: white;
+   }
+
+.event-card-1:hover {
+    background-image: url('../images/Future-of-Investing.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.event-card-2:hover {
+    background-image: url('../images/IBM_BostonRdshow.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.event-card-3:hover {
+    background-image: url('../images/Bloomberg-Tech.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.event-card-4:hover {
+    background-image: url('../images/finance.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    /* Adjust opacity to desired level */
+}
+.event-card-5:hover {
+    background-image: url('../images/Tile_Web_2024-Screentime.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.event-card-6:hover {
+    background-image: url('../images/Tile-Image_420x500.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.event-card-7:hover {
+    background-image: url('../images/Women-Money-Power.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.event-card-8:hover {
+    background-image: url('../images/Tile-Image_420x500.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.event-card-9:hover {
+    background-image: url('../images/IBM_BostonRdshow.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* Add background image based on the data attribute */
+/* .event-card[data-image="img1.jpg"]::before {
+    background-image: url('../images/Bloomberg-Tech.png');
+}
+
+.event-card[data-image="img2.jpg"]::before {
+    background-image: url('img2.jpg');
+}
+
+.event-card[data-image="img3.jpg"]::before {
+    background-image: url('img3.jpg');
+} */
