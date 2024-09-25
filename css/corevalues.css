@@ -214,6 +214,7 @@ ul {
   font-weight: 600;
   font-style: normal;
   transition: all 5s ease-in-out;
+  display: none;
 }
 
 .nav-items .nav-list-item {
