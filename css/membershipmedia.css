@@ -1,0 +1,103 @@
+@media only screen and (max-width:600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    
+      body {
+        width: 100vw;
+      }
+    
+      .nav-list {
+        position: absolute;
+        top: 2%;
+        background-color: #0056b3;
+        height: 80vh;
+        width: 80%;
+        color: #fff;
+        z-index: 9;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 30px;
+        gap: 30px;
+       display: none;
+      }
+    
+      .nav-list .list-item {
+        color: white;
+      }
+    
+      .nav-list .list-item:hover::after {
+        width: 10%;
+        background: #e0d6d6;
+      }
+      .nav-items a{
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .nav-items {
+        width: 180px;
+        height: 150px;
+        background-color: #fff;
+        color: #000;
+        font-size: 0.4rem;
+        position: absolute;
+        left: -85%;
+        top: 20%;
+      }
+      .nav-items:hover{
+        color: rgb(179, 131, 44);
+      }
+    
+      .nav-buttons {
+        display: none;
+      }
+    
+      .navbar-menu-icon {
+        display: inline;
+        margin-right: 30px;
+        margin-top: 20px;
+        font-size: 2.1rem;
+        z-index: 9;
+      }
+    
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+      }
+    
+      .nav-logo {
+        margin-left: -80px;
+        padding-bottom: 20px;
+      }
+    
+      .nav-logo img {
+        height: 100px;
+        width: 120px;
+      }
+
+    
+     .membership-hero{
+        width: 100%;
+     }
+     .membership-hero-1 h1 {
+        font-size: 2rem;
+    }
+    .membership-options{
+        display: flex;
+    }
+    .membership-button {
+        padding: 10px 25px;
+        font-size: 0.5rem;
+    }
+    
+}
