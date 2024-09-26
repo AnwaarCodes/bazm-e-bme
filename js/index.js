@@ -27,19 +27,24 @@
 
 function menuChecked() {
   document.addEventListener('DOMContentLoaded', function() {
-    var menuIcon = document.getElementsByClassName('navbar-menu-icon');
-    var navList = document.getElementsByClassName('nav-list');
-  
-    menuIcon.addEventListener('change', function() {
-        if (menuIcon.checked) {
+    var menuIcons = document.getElementsByClassName('navbar-menu-icon');
+    var navLists = document.getElementsByClassName('nav-list');
+    
+    Array.from(menuIcons).forEach(function(menuIcon) {
+      menuIcon.addEventListener('change', function() {
+        Array.from(navLists).forEach(function(navList) {
+          if (menuIcon.checked) {
             navList.style.display = 'block';
-        } else {
+          } else {
             navList.style.display = 'none';
-        }
+          }
+        });
+      });
     });
   });
 }
 menuChecked();
+
 
 // function photosanim() {
 //   var text = document.querySelector(".text-over h2,h1,p")
