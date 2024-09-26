@@ -24,22 +24,19 @@
 //     slide.style.transform = `translateX(-${value * 100}%)`;
 //   });
 // };
-function menuIcon() {
-  menuIcon.addEventListener('change', function() {
-    if (menuIcon.checked) {
-        navList.style.display = 'block';
-    } else {
-        navList.style.display = 'none';
-    }
-});
-}
 
 function menuChecked() {
   document.addEventListener('DOMContentLoaded', function() {
     var menuIcon = document.getElementsByClassName('navbar-menu-icon');
     var navList = document.getElementsByClassName('nav-list');
   
-    menuIcon();
+    menuIcon.addEventListener('change', function() {
+        if (menuIcon.checked) {
+            navList.style.display = 'block';
+        } else {
+            navList.style.display = 'none';
+        }
+    });
   });
 }
 menuChecked();
