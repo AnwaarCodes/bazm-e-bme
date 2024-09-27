@@ -40,9 +40,10 @@ html {
   background: transparent;
   cursor: pointer;
   display: none;
+  transition: all 2s ease-in-out;
 }
 
-.navbar-menu-icon input {
+/* .navbar-menu-icon input {
   display: none;
 }
 
@@ -93,8 +94,8 @@ html {
   top: 28px;
   left: 5px;
 }
-
-.nav-list {
+ */
+ .nav-list {
   list-style: none;
   display: flex;
   justify-content: center;

@@ -25,26 +25,12 @@
 //   });
 // };
 
-function menuChecked() {
-  document.addEventListener('DOMContentLoaded', function() {
-    var menuIcons = document.getElementsByClassName('navbar-menu-icon');
-    var navLists = document.getElementsByClassName('nav-list');
-    
-    Array.from(menuIcons).forEach(function(menuIcon) {
-      menuIcon.addEventListener('change', function() {
-        Array.from(navLists).forEach(function(navList) {
-          if (menuIcon.checked) {
-            navList.style.display = 'block';
-          } else {
-            navList.style.display = 'none';
-          }
-        });
-      });
-    });
-  });
-}
-menuChecked();
+let menuicon = document.querySelector(".navbar-menu-icon");
+let ul = document.querySelector(".nav-list");
 
+menuicon.addEventListener("click", ()=>{
+  ul.classList.toggle("nav-list");
+})
 
 // function photosanim() {
 //   var text = document.querySelector(".text-over h2,h1,p")
