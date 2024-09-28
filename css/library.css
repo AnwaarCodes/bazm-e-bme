@@ -10,9 +10,9 @@ body {
     margin: 0;
     padding: 0;
 }
-* {
-    outline: 1px solid red; /* This will outline all elements to help identify overflow */
-}
+/* * {
+    outline: 1px solid red; 
+} */
 
 
 .library-header{
@@ -152,7 +152,6 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: #60c4a0;
 }
 
 .library-content {
@@ -215,7 +214,6 @@ body {
     width: 70%;
     margin: auto;
     flex-wrap: wrap;
-    background-color: #f0ad4e;
 }
 
 .library-left-section {
@@ -271,7 +269,6 @@ body {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        background-color: yellowgreen;
     }
 
     .library-left-section, .library-right-section {
@@ -295,7 +292,6 @@ body {
 .library-boxes-section {
    width: 100%;
     margin: 0px auto;
-    background-color: red;
 }
 
 .library-boxes-section .library-heading-2 {
@@ -331,11 +327,12 @@ body {
     width: 70%;
     height: auto;   
     border-radius: 10px;
+    margin: auto;
 }
 
 .library-box img {
     width: 100%;
-    height: auto;
+    height: 200px;
  
     border-radius: 10px 10px 0 0;
 }
@@ -359,8 +356,6 @@ body {
     .library-boxes-grid {
         grid-template-columns: 1fr;
     }
-
-
 }
 
 .footer-section {
