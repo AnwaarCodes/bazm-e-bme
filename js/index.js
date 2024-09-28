@@ -26,10 +26,10 @@
 // };
 
 let menuicon = document.querySelector(".navbar-menu-icon");
-let ul = document.querySelector(".nav-list");
+let ul = document.querySelector("ul");
 
 menuicon.addEventListener("click", ()=>{
-  ul.classList.toggle("nav-list");
+  ul.classList.toggle(".nav-list");
 })
 
 // function photosanim() {
