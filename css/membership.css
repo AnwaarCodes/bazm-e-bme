@@ -325,80 +325,53 @@ ul {
     top: 31%;
     left: 31%;
     transform: translate(-20%, -20%);
+     animation: moveInCircle 20s infinite linear;
 }
+
+.orbit{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: rotate-2 20s infinite linear;
+}
+@keyframes rotate-2 {
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.circle-1{
+    width: 120px;
+    height: 120px;
+    background-color: #303f9f;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -10px;
+}
+
 .circle-2{
-    width: 90px;
-     height: 90px;
-     border-radius: 10%;
-     background: radial-gradient(circle, #3f51b5, #283593); /* Blue gradient */
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     
-     transform: translate(-70%, 10%);
+  top: 100px;
+  left: -10px;
  }
  .circle-3{
-    width: 90px;
-     height: 90px;
-     border-radius: 10%;
-     background: radial-gradient(circle, #3f51b5, #283593); /* Blue gradient */
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     transform: translate(-20%, 60%);
+  
  }
  .circle-4{
-    width: 90px;
-     height: 90px;
-     border-radius: 10%;
-     background: radial-gradient(circle, #3f51b5, #283593); /* Blue gradient */
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     transform: translate(120%, 10%);
+   
  }
  .circle-5{
-    width: 90px;
-     height: 90px;
-     border-radius: 10%;
-     background: radial-gradient(circle, #3f51b5, #283593); /* Blue gradient */
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     transform: translate(260%, -140%);
  }
  .circle-6{
-    width: 90px;
-     height: 90px;
-     border-radius: 10%;
-     background: radial-gradient(circle, #3f51b5, #283593); /* Blue gradient */
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     transform: translate(300%, -380%);
+   
  }
- .circle-7{
-    width: 90px;
-     height: 90px;
-     border-radius: 10%;
-     background: radial-gradient(circle, #3f51b5, #283593); /* Blue gradient */
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     transform: translate(250%, -630%);
- }
- .circle-8{
-    width: 90px;
-     height: 90px;
-     border-radius: 10%;
-     background: radial-gradient(circle, #3f51b5, #283593); /* Blue gradient */
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-top: -140px;
-     margin-left:150px;
-     transform: translate(-50%, -620%);
- }
+
 
 .circle,.circle-1,.circle-2,.circle-3,.circle-4,.circle-5,.circle-6,.circle-7,.circle-8 p {
     color: white;

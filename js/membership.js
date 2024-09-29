@@ -43,18 +43,20 @@ professionalButton.addEventListener('click', toggleColors);
 // );
 
 
-var tl = gsap.timeline()
+// var tl = gsap.timeline()
 
-tl.to(".circle-1, .circle-2, .circle-3, .circle-4, .circle-5, .circle-6, .circle-7, .circle-8",{
-   duration:4,
-   rotate:360,
-   opacity:1,
-   repeat:-1,
-   ease:"linear"
-})
-tl.to(".circle",{
-  duration:4,
-  rotate:360,
-  repeat:-1,
+// tl.to(".circle-1, .circle-2, .circle-3, .circle-4, .circle-5, .circle-6, .circle-7, .circle-8",{
+//    duration:4,
+//    rotate:360,
+//    opacity:1,
+//    repeat:-1,
+//    ease:"linear",
+   
+// })
+
+// tl.to(".circle",{
+//   duration:4,
+//   rotate:360,
+//   repeat:-1,
   
-})
+// })
