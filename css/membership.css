@@ -334,9 +334,8 @@ ul {
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-top: 60px;
-     margin-left: -15px;
-     transform: translate(-50%, -50%);
+     
+     transform: translate(-70%, 10%);
  }
  .circle-3{
     width: 90px;
@@ -346,9 +345,7 @@ ul {
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-top: 40px;
-     margin-left: 25px;
-     transform: translate(-50%, -50%);
+     transform: translate(-20%, 60%);
  }
  .circle-4{
     width: 90px;
@@ -358,9 +355,7 @@ ul {
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-top: -40px;
-     margin-left:155px;
-     transform: translate(-50%, -50%);
+     transform: translate(120%, 10%);
  }
  .circle-5{
     width: 90px;
@@ -370,9 +365,7 @@ ul {
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-top: -135px;
-     margin-left:280px;
-     transform: translate(-50%, -50%);
+     transform: translate(260%, -140%);
  }
  .circle-6{
     width: 90px;
@@ -382,9 +375,7 @@ ul {
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-top: -225px;
-     margin-left:320px;
-     transform: translate(-50%, -50%);
+     transform: translate(300%, -380%);
  }
  .circle-7{
     width: 90px;
@@ -394,9 +385,7 @@ ul {
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-top: -210px;
-     margin-left:275px;
-     transform: translate(-50%, -50%);
+     transform: translate(250%, -630%);
  }
  .circle-8{
     width: 90px;
@@ -408,7 +397,7 @@ ul {
      align-items: center;
      margin-top: -140px;
      margin-left:150px;
-     transform: translate(-50%, -50%);
+     transform: translate(-50%, -620%);
  }
 
 .circle,.circle-1,.circle-2,.circle-3,.circle-4,.circle-5,.circle-6,.circle-7,.circle-8 p {
