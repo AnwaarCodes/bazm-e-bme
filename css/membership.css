@@ -286,7 +286,7 @@ ul {
 }
 
 
-.box-effect{
+.membership-box-effect{
     width: 100vw;
     height: 100vh;
     background-color: #e4dddd;
@@ -295,13 +295,13 @@ ul {
     align-items: center;
 }
 
-.container {
+.membership-container {
     position: relative;
     width: 300px;
     height: 300px;
 }
 
-.circle {
+.membership-circle {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -313,8 +313,9 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation: rotate-2 20s infinite linear;
 }
-.circle-1{
+.membership-circle-1{
    width: 90px;
     height: 90px;
     border-radius: 10%;
@@ -325,13 +326,13 @@ ul {
     top: 31%;
     left: 31%;
     transform: translate(-20%, -20%);
-     animation: moveInCircle 20s infinite linear;
+     /* animation: moveInCircle 20s infinite linear; */
 }
 
-.orbit{
+.membership-orbit{
     width: 500px;
     height: 500px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -344,7 +345,7 @@ ul {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
-.circle-1{
+.membership-circle-1{
     width: 120px;
     height: 120px;
     background-color: #303f9f;
@@ -353,41 +354,68 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -10px;
+    top: -20px;
+    left: 200px;
 }
 
-.circle-2{
-  top: 100px;
-  left: -10px;
+.membership-circle-2{
+  top: 50px;
+  left: 50px;
  }
- .circle-3{
-  
+ .membership-circle-3{
+  top: 210px;
+  left: -20px;
  }
- .circle-4{
-   
+ .membership-circle-4{
+   top: 380px;
+   left: 50px;
  }
- .circle-5{
+ .membership-circle-5{
+    top: 450px;
+    left: 220px;
  }
- .circle-6{
-   
+ .membership-circle-6{
+   top: 380px;
+   left: 380px;
  }
+ .membership-circle-7{
+    top: 210px;
+    left: 440px;
+  }
+  .membership-circle-8{
+    top: 40px;
+    left: 370px;
+  }
 
 
-.circle,.circle-1,.circle-2,.circle-3,.circle-4,.circle-5,.circle-6,.circle-7,.circle-8 p {
+.membership-circle,.membership-circle-1,.membership-circle-2,.membership-circle-3,.membership-circle-4,.membership-circle-5,.membership-circle-6,.membership-circle-7,.membership-circle-8 p {
     color: white;
     font-weight: bold;
     text-align: center;
 }
 
-.arrow {
+.membership-arrow-orbit{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate-2 20s infinite linear;
+}
+
+.membership-arrow {
     position: absolute;
     width: 60px;
     height: 2px;
-    background-color: #303f9f; /* Darker blue for arrows */
-    transform-origin: 100% 50%; /* Rotate from the end */
+    background-color: #303f9f; 
+    transform-origin: 100% 50%; 
 }
 
-.arrow::before {
+
+.membership-arrow::before {
     content: '';
     position: absolute;
     right: 0;
@@ -395,55 +423,55 @@ ul {
     transform: translateY(-50%);
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-left: 8px solid #303f9f; /* Darker blue for arrowheads */
+    border-left: 8px solid #303f9f; 
 }
 
-.arrow.top {
-    top: 30px;
-    left: 30%;
+.membership-arrow.top {
+    top: -70px;
+    left: -10%;
     transform: translateX(-15%);
     rotate: 270deg;
 }
 
-.arrow.right {
+.membership-arrow.right {
     top: 50%;
-    right: 20px;
+    right: -82px;
     transform: translateX(-33%) rotate(0deg);
 }
 
-.arrow.bottom {
-    bottom: 39px;
+.membership-arrow.bottom {
+    bottom: -62px;
     left: 50%;
     transform: translateX(-95%) rotate(90deg);
 }
 
-.arrow.left {
+.membership-arrow.left {
     top: 50%;
-    left: 20px;
+    left: -80px;
     transform: translateX(-66%) rotate(-180deg);
 }
 
-.arrow.top-left {
-    top: 74px;
-    left: 10px;
+.membership-arrow.top-left {
+    top: -29px;
+    left: -85px;
     transform: rotate(225deg);
 }
 
-.arrow.top-right {
-    top: 70px;
-    right: 74px;
+.membership-arrow.top-right {
+    top: -31px;
+    right: -27px;
     transform: rotate(-45deg);
 }
 
-.arrow.bottom-left {
-    bottom: 67px;
-    left: 17px;
+.membership-arrow.bottom-left {
+    bottom: -32px;
+    left: -86px;
     transform: rotate(130deg);
 }
 
-.arrow.bottom-right {
-    bottom: 72px;
-    right: 72px;
+.membership-arrow.bottom-right {
+    bottom: -28px;
+    right: -30px;
     transform: rotate(45deg);
 }
 
