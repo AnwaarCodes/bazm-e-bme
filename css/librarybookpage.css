@@ -1,0 +1,88 @@
+body {
+    font-family: sans-serif;
+  }
+  .container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .book-cover {
+    width: 300px;
+    height: 150px;
+    margin-left: 100px;
+  }
+  .book-cover img {
+    width: 100%;
+  }
+  .book-info {
+    flex: 1;
+    display: flex;
+  justify-content: space-between;
+  }
+  .book-titles{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto 0;
+  }
+  .book-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .book-author {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  .book-rating {
+    margin-bottom: 10px;
+  }
+  .book-format {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .book-availability {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 100px;
+  }
+  .book-availability h3 {
+    margin-top: 0;
+  }
+  .book-availability .available {
+    color: green;
+    font-weight: bold;
+  }
+  .book-availability ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .book-availability button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .book-availability select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .alert {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
