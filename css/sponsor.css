@@ -1,0 +1,161 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .sponsor-section{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 100px;
+    padding: 0 200px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+ 
+  .left-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .left-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .left-section button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .right-section img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  
+  /* .boxes-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .box {
+    width: 25%;
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .box p {
+    font-size: 16px;
+  }
+  
+
+  .box-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  .box-2 {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  
+  .box-3 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .box-4 {
+    position: relative;
+    bottom: 0;
+    right: 0;
+  } */
+  .boxes-section {
+    display: grid;
+    grid-template-columns: 200px 300px;
+    grid-template-rows:  100px 100px;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #4CAF50;
+  }
+  
+  .boxes-section h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .box-1 {
+    grid-row: 2 / span 2;
+    height: 498px;
+    width: 429px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: -100px;
+    margin-top: -50px;
+    
+  }
+  
+  .box-2, .box-3, .box-4, .box-5 {
+    height: 150px;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .box-2 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  .box-3 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  
+  .box-4 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  
+  .box-5 {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  
