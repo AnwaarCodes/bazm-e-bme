@@ -235,7 +235,7 @@
   .nav-list-item:hover {
     color: #964040;
   }
-  @media only screen and (max-width:600px) {
+  @media only screen and (max-width:760px) {
     .nav-list {
       position: absolute;
       top: 2%;
