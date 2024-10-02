@@ -466,7 +466,7 @@ textarea{
 }
 
 .book-item img {
-  width: 60%;
+  width: 70%;
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -503,6 +503,7 @@ textarea{
   margin: 0 auto;
   cursor: pointer;
   margin-left: 40%;
+  margin-bottom: 100px;
 }
 .book-btn:hover{
   background-color:  #007BFF;
@@ -545,7 +546,8 @@ textarea{
   }
 
   .book-btn {
-    width: 100%;
+    width: 40%;
+    margin-left: 170px;
   }
 }
 
@@ -762,5 +764,104 @@ footer {
 
   .footer-content p {
     font-size: clamp(0.8rem, 2vw, 1rem);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.details-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: start;
+}
+.about-details{
+  display: flex;
+  flex-direction: column;
+margin-left: 234px;
+}
+
+h2 {
+  font-size: 1.2rem; 
+ margin-top: -2px;
+ margin-left: -135px;
+}
+
+.detail {
+  margin-bottom: 18px; 
+}
+
+.detail h4 {
+  font-size: 12px;
+  margin: 0 0 5px 0;
+  font-weight: lighter;
+  color: #333;
+}
+hr{
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+.detail p {
+  font-size: 12px; 
+  margin: 0;
+  color: #333;
+  line-height: 1.6; 
+}
+
+strong {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  .details-container {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .about-details {
+      margin-left: 0;
+  }
+
+  h2 {
+      font-size: 1rem;
+      margin-left: 0;
+  }
+
+  .detail h4, .detail p {
+      font-size: 10px;
+  }
+
+  strong {
+      font-size: 9px;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-container {
+      padding: 8px;
+  }
+
+  h2 {
+      font-size: 0.9rem;
+  }
+
+  .detail h4, .detail p {
+      font-size: 9px;
+  }
+
+  strong {
+      font-size: 8px;
   }
 }
