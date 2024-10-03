@@ -296,25 +296,30 @@ body {
 
 .library-boxes-section .library-heading-2 {
     margin-top: 0;
+    margin-left: 50px;
     font-size: 1.3rem;
     font-weight: bold;
     color: #333;
 }
 
 .library-boxes-grid {
+    /* background-color: #cea51e; */
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
+    grid-gap: 20px;
     justify-content: center;
+    align-items: center;
     width: 100%;
     margin-top: 20px;
+    margin: auto;
     @media (width >= 40em /*640px*/) {
         grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
+      
     }
     @media (width >= 60em /*960px*/) {
         grid-template-columns: repeat(4, 1fr);
-        justify-content: center;
+       
     }
    
 }
@@ -323,25 +328,37 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 70%;
+    justify-content: flex-start;
+    width: 100%;
     height: auto;   
     border-radius: 10px;
     margin: auto;
+    /* background-color: #60c4a0; */
 }
 
 .library-box img {
     width: 100%;
-    height: 200px;
- 
-    border-radius: 10px 10px 0 0;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ddd;
+}
+.library-box img:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease;
+}
+.library-box {
+    /* width: auto;  */
+    max-width: 150px; 
 }
 
 .library-box .library-paragraph-2 {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: #666;
-    margin-bottom: 20px;
-    width: 110px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
 }
 
 
