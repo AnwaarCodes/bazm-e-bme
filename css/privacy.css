@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.content {
+    width: 70%;
+    padding-left: 100px;
+}
+
+.content h1,
+h2 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.content p,
+ul {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.content ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.sidebar {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.newsletter-box {
+    background-color: #111;
+    color: white;
+    width: 349px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.best-content-box {
+    background-color: #111;
+    color: white;
+    width: 349px;
+    height: 549px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.newsletter-box h3,
+.best-content-box h3 {
+    margin-bottom: 15px;
+}
+
+.newsletter-box p,
+.best-content-box p {
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.newsletter-box hr,
+.best-content-box hr {
+    background: linear-gradient(0deg, #60C4A0 0%, #D4B036 100%);
+    width: 44px;
+    height: 3px;
+    margin-left: 3px;
+}
+
+.newsletter-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter-box input {
+    padding: 10px;
+    height: 44px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.newsletter-box button {
+    padding: 10px;
+    width: 148px;
+    height: 44px;
+    margin: auto;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #60C4A0 0%, #D4B036 100%);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.best-content-box ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.best-content-box a {
+   color: #f4f4f4;
+   transition: all 0.4s ease-out;
+}
+.best-content-box a:hover {
+   font-size: 1.01rem;
+   color: rgb(162, 162, 216);
+ }
+.best-content-box ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.best-content-box span {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #60C4A0 0%, #D4B036 100%);
+}
+
+/* .best-content-box ul li:nth-child(odd) {
+   
+} */
