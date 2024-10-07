@@ -237,7 +237,7 @@ ul {
 }
 
 .membership-hero{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
      background: url('/images/rectangle-92.png') no-repeat center center fixed;
     background-size: cover; 
@@ -265,16 +265,21 @@ ul {
     background-color: white;
     border-radius: 40px;
     overflow: hidden;
+    border: 1px solid white;
 }
 
 .membership-button {
-    padding: 20px 40px;
+   width: 190px;
+   aspect-ratio: 4/1;
+   padding: 12px;
     border: none;
     cursor: pointer;
     font-weight: bold;
     color: black;
     background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
 }
+
 .membership-student {
     background-color: #f0f0f0;
     color: black;
@@ -285,11 +290,122 @@ ul {
     color: white;
 }
 
+.boxes-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.box {
+    background: radial-gradient(124.72% 124.72% at 46.97% -44.59%, #FFFFFF 0%, #F2F3F3 24.8%, #242930 100%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: -130px 10px 30px -3px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.5);  
+    width: 300px; 
+    height: 347px; 
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+.box-2{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: transform 0.3s ease;
+    width: 270px; 
+    height: 317px; 
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.icon {
+    font-size: 3em;
+   margin: 20px 0px 10px 40px;
+}
+
+.box-2 h3 {
+    margin: 10px 0px 10px 40px;
+    font-family: Montserrat;
+    font-size: 1.3em;
+}
+
+.box-2 p {
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    font-family: Hind Madurai;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.box-5,.box-6, .box-7, .box-8{
+    margin-top: 0px;
+}
+@media (max-width: 768px) {
+    .boxes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -70px;
+    }
+    
+    .box {
+        margin: 0 auto; 
+        width: 250px;
+        height: 280px;
+    }
+    
+    .box-2 {
+        width: 90%; 
+        width: 230px;
+        height: 260px;   
+    }
+    .box-2 p{
+        font-size: 0.8rem;
+    }
+    .box-2 h3{
+        font-size: 1.2rem;
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .boxes-grid {
+        grid-template-columns: 1fr; 
+        padding: 10px; 
+    }
+    
+    .box {
+        margin: 10px auto; 
+        width: 100%; 
+    }
+    
+    .box-2 {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+
 
 .membership-box-effect{
-    width: 100vw;
+    border-top: 1px solid #000;
+    width: 100%;
     height: 100vh;
-    background-color: #e4dddd;
     display: flex;
     justify-content: center;
     align-items: center;
