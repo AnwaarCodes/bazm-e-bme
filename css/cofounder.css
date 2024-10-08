@@ -346,9 +346,97 @@ ul {
   position: absolute;
 }
 
+@media only screen and (max-width:600px) {
+  .nav-list {
+    position: absolute;
+    top: 2%;
+    background-color: #0056b3;
+    height: 80vh;
+    width: 90%;
+    color: #fff;
+    z-index: 9;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 30px;
+  }
 
+  .nav-list .list-item {
+    color: white;
+    padding-bottom: 20px;
+    
+  }
+
+  .nav-list .list-item:hover::after {
+    width: 10%;
+   color: darkgoldenrod;
+  }
+  .nav-items a{
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+  }
+  .nav-items a:hover{
+    color: peru;
+  }
+
+  .nav-items {
+    width: 180px;
+    height: 150px;
+    background-color: #fff;
+    color: #000;
+    font-size: 0.4rem;
+    position: absolute;
+    left: -85%;
+    top: 20%;
+  }
+  .nav-items:hover{
+    color: rgb(179, 131, 44);
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+
+  .navbar-menu-icon {
+    display: flex;
+    margin-right: 30px;
+    margin-top: 20px;
+    font-size: 2.1rem;
+    z-index: 9;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-logo {
+    margin-left: -80px;
+    padding-top: 20px;
+  }
+
+  .nav-logo img {
+    height: 100px;
+    width: 120px;
+  }
+}
 
 @media (max-width: 480px) {
+  .cofounder-message h1{
+    font-size: 1.3rem;
+  }
+  .cofounder-message{
+    height: 90px;
+  }
   .text-cofounder {
       width: 100% !important; 
       margin: 0 auto; 
@@ -389,6 +477,12 @@ ul {
 
 
 @media (max-width: 768px) {
+  .cofounder-message h1{
+    font-size: 1.45rem;
+  }
+  .cofounder-message{
+    height: 100px;
+  }
   .text-cofounder {
       width: 100% !important; 
       margin: 0 auto; 
