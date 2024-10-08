@@ -229,7 +229,13 @@ ul {
   font-style: normal;
   transition: all 5s ease-in-out;
 }
-
+.nav-items a{
+  color: #000;
+  text-decoration: none;
+}
+.nav-items a:hover{
+  color: #03162b;
+}
 .nav-items .nav-list-item {
   font-size: 1.1rem;
 }
