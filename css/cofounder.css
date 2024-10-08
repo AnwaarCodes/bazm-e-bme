@@ -226,18 +226,17 @@ ul {
   color: #964040;
 }
 
-
-
-.cofounder-message{
-    margin-top: 30px;
-    width: 100vw;
-    height: 162px;
-    background: linear-gradient(182.53deg, #D4B036 -100.39%, #59B292 102.26%, #1E1E1E 289.16%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.cofounder-message {
+  margin-top: 30px;
+  width: 100vw;
+  height: 162px;
+  background: linear-gradient(182.53deg, #D4B036 -100.39%, #59B292 102.26%, #1E1E1E 289.16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.cofounder-message h1{
+
+.cofounder-message h1 {
   font-size: 48px;
   color: white;
   font-family: "PT Serif", serif;
@@ -246,41 +245,43 @@ ul {
   letter-spacing: 2px;
 }
 
-.cofounder-section{
-    min-height: 100vh;
+.cofounder-section {
+  min-height: 100vh;
 }
 
-.cofounder-img-text{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 130px;
+.cofounder-img-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 130px;
 }
 
-.cofounder-images .cofounder-img-1{
-    width: 679px;
-    height: 570px;
-}
-.cofounder-images .cofounder-img-2{
-    margin-bottom: 50px;
+.cofounder-images .cofounder-img-1 {
+  width: 679px;
+  height: 570px;
 }
 
-
-.cofounder-img-text .cofounder-text-paragraph-1{
-    padding-left: 30px;
-    font-family: "Roboto Serif", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    line-height: 27.81px;
-   font-size: 20px;
-   margin-top: 50px;
+.cofounder-images .cofounder-img-2 {
+  margin-bottom: 50px;
 }
+
+.cofounder-img-text .cofounder-text-paragraph-1 {
+  padding-left: 30px;
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 27.81px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
 .text-cofounder {
-    flex-direction: column;
-    width: 60%;
+  flex-direction: column;
+  width: 60%;
 }
-.text-cofounder .cofounder-urdu-text{
+
+.text-cofounder .cofounder-urdu-text {
   font-size: 28px;
   font-family: "Roboto Serif", serif;
   font-optical-sizing: auto;
@@ -292,59 +293,162 @@ ul {
   margin-left: 50px;
 }
 
-.text-cofounder .founder-name{
-    color: #000;
-    font-size: 20px;
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 30px;
-    font-family: "Poppins", sans-serif;
+.text-cofounder .founder-name {
+  color: #000;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 30px;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
-  
 }
 
-.text-cofounder .founder-position{
-    color:#60C4A0;
-    font-size: 20px;
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 7px;
-    font-family: "Roboto Serif", serif;
+.text-cofounder .founder-position {
+  color: #60C4A0;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 7px;
+  font-family: "Roboto Serif", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-.cofounder-img-text-2 .founder-position{
-   margin-bottom: 50px;
-   display: flex;
-   justify-content: flex-end;
-   font-family: "Roboto Serif", serif;
+.cofounder-img-text-2 .founder-position {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Roboto Serif", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-.cofounder-img-text-2 .founder-name{
+
+.cofounder-img-text-2 .founder-name {
   font-family: "Roboto Serif", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-    display: flex;
-    justify-content: flex-end;
- }
+  display: flex;
+  justify-content: flex-end;
+}
 
-.cofounder-img-text-2 .cofounder-img-2{
+.cofounder-img-text-2 .cofounder-img-2 {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  rotate: 130deg;
-  transform: scaleY(-1);
+  rotate: 30deg;
+  transform: translateY(180deg);
   margin-left: 510px; 
   margin-top: -160px;
   position: absolute;
-  
 }
+
+
+
+@media (max-width: 480px) {
+  .text-cofounder {
+      width: 100% !important; 
+      margin: 0 auto; 
+  }
+
+  .cofounder-img-text {
+      padding: 20px; 
+      flex-direction: column-reverse; 
+  }
+
+  .cofounder-images .cofounder-img-1 {
+      width: 100%; 
+      height: auto; 
+  }
+
+  .cofounder-img-text .cofounder-text-paragraph-1 {
+      font-size: 16px; 
+      line-height: 22px; 
+      padding-left: 10px; 
+  }
+
+  .text-cofounder .cofounder-urdu-text {
+      font-size: 20px; 
+      margin-left: 0; 
+  }
+
+  .text-cofounder .founder-name,
+  .text-cofounder .founder-position {
+      font-size: 16px;
+  }
+
+  .cofounder-img-text-2 .cofounder-img-2 {
+      margin-left: 0; 
+      margin-top: -80px; 
+      transform: rotate(-75deg);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .text-cofounder {
+      width: 100% !important; 
+      margin: 0 auto; 
+  }
+  
+
+  .cofounder-img-text {
+      padding: 50px; 
+      flex-direction: column-reverse; 
+  }
+
+  .cofounder-images .cofounder-img-1 {
+      width: 100%; 
+      height: auto;
+  }
+  
+ 
+  .cofounder-img-text .cofounder-text-paragraph-1 {
+      font-size: 18px; 
+      line-height: 24px; 
+      padding-left: 10px; 
+  }
+
+  .text-cofounder .cofounder-urdu-text {
+      font-size: 25px; 
+      margin-left: 0; 
+  }
+
+  .text-cofounder .founder-name,
+  .text-cofounder .founder-position {
+      font-size: 18px; 
+  }
+
+  .cofounder-images .cofounder-img-2{
+      transform: rotate(-75deg);
+      margin-left: 260px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .text-cofounder {
+      width: 80%;
+      margin: 0 auto; 
+  }
+
+  .cofounder-img-text {
+      padding: 70px; 
+  }
+
+  .text-cofounder .cofounder-urdu-text {
+      font-size: 26px; 
+  }
+
+  .text-cofounder .founder-name,
+  .text-cofounder .founder-position {
+      font-size: 20px; 
+  }
+}
+
 
 
 
@@ -483,112 +587,3 @@ button:hover{
 
 
 
-
-@media only screen and (max-width:600px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    width: 100%;
-  }
-
-  .nav-list {
-    position: absolute;
-    top: 2%;
-    background-color: #0056b3;
-    height: 80vh;
-    width: 80%;
-    color: #fff;
-    z-index: 9;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-top: 30px;
-    gap: 30px;
- display: none;
-  }
-
-  .nav-list .list-item {
-    color: white;
-  }
-
-  .nav-list .list-item:hover::after {
-    width: 10%;
-    background: #e0d6d6;
-  }
-
-  .nav-items a {
-    font-size: 0.7rem;
-    color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .nav-items {
-    width: 110px;
-    height: 180px;
-    background-color: #000;
-    font-size: 0.4rem;
-    position: absolute;
-    left: -85%;
-    top: 20%;
-  }
-
-  .nav-buttons {
-    display: none;
-  }
-
-  .navbar-menu-icon {
-    display: inline;
-    margin-right: 30px;
-    margin-top: 20px;
-    font-size: 2.1rem;
-    z-index: 9;
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .nav-logo {
-    margin-left: -80px;
-    padding-bottom: 20px;
-  }
-
-  .nav-logo img {
-    height: 100px;
-    width: 120px;
-  }
-
-  .cofounder-message{
-    width: 100%;
-    height: 100px;
-  }
-  .cofounder-message h1{
-    font-size: 0.9rem;
-  }
-  .cofounder-section{
-    width: 100%;
-  }
-  .cofounder-img-text{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .text-cofounder{
-    width: 40%;
-  }
-  .text-cofounder .cofounder-text-paragraph-1{
-    font-size: 0.6rem;
-    padding-left: 1px;
-    margin: 0;
-  }
-
-}
