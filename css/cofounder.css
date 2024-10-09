@@ -259,10 +259,13 @@ ul {
 .cofounder-images .cofounder-img-1 {
   width: 679px;
   height: 570px;
+  z-index: 99;
 }
 
 .cofounder-images .cofounder-img-2 {
   margin-bottom: 50px;
+  height: 50px;
+  width: 120px;
 }
 
 .cofounder-img-text .cofounder-text-paragraph-1 {
@@ -430,9 +433,9 @@ ul {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .cofounder-message h1{
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .cofounder-message{
     height: 90px;
@@ -450,6 +453,7 @@ ul {
   .cofounder-images .cofounder-img-1 {
       width: 100%; 
       height: auto; 
+      z-index: 9;
   }
 
   .cofounder-img-text .cofounder-text-paragraph-1 {
@@ -469,7 +473,7 @@ ul {
   }
 
   .cofounder-img-text-2 .cofounder-img-2 {
-      margin-left: 0; 
+      margin-left: 0px; 
       margin-top: -80px; 
       transform: rotate(-75deg);
   }
@@ -478,10 +482,10 @@ ul {
 
 @media (max-width: 768px) {
   .cofounder-message h1{
-    font-size: 1.45rem;
+    font-size: 1rem;
   }
   .cofounder-message{
-    height: 100px;
+    height: 80px;
   }
   .text-cofounder {
       width: 100% !important; 
@@ -501,7 +505,7 @@ ul {
   
  
   .cofounder-img-text .cofounder-text-paragraph-1 {
-      font-size: 18px; 
+      font-size: 1rem; 
       line-height: 24px; 
       padding-left: 10px; 
   }
@@ -518,20 +522,28 @@ ul {
 
   .cofounder-images .cofounder-img-2{
       transform: rotate(-75deg);
-      margin-left: 260px;
+      margin-left: 180px;
+      margin-top: 50px;
   }
 }
 
 
-@media (max-width: 1200px) {
+@media  (min-width:768px) and (max-width: 1200px) {
+  .cofounder-message h1{
+    font-size: 1.5rem;
+  }
+  .cofounder-message{
+    height: 100px;
+  }
   .text-cofounder {
       width: 80%;
       margin: 0 auto; 
   }
 
   .cofounder-img-text {
-      padding: 70px; 
-  }
+    padding: 20px; 
+    flex-direction: column-reverse; 
+}
 
   .text-cofounder .cofounder-urdu-text {
       font-size: 26px; 
@@ -540,6 +552,10 @@ ul {
   .text-cofounder .founder-name,
   .text-cofounder .founder-position {
       font-size: 20px; 
+  }
+  .cofounder-images .cofounder-img-2{
+    transform: rotate(270deg);
+    margin-left: 500px;
   }
 }
 

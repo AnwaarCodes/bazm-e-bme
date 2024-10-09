@@ -94,6 +94,8 @@
     }
     .membership-options{
         display: flex;
+        width: 105%;
+       
     }
     .membership-button {
         padding: 10px 25px;

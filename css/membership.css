@@ -269,8 +269,8 @@ ul {
 }
 
 .membership-button {
-   width: 190px;
-   aspect-ratio: 4/1;
+   width: 230px;
+   aspect-ratio: 2.9/1;
    padding: 12px;
     border: none;
     cursor: pointer;
@@ -291,9 +291,9 @@ ul {
 }
 
 .boxes-grid {
-    display: grid;
+    display: flex;
     justify-content: center;
-    grid-template-columns: repeat(4, 1fr); 
+    flex-wrap: wrap;
     gap: 10px;
     width: 100%;
 }
@@ -306,13 +306,13 @@ ul {
     align-items: center;
     justify-content: center;
     margin: -130px 0px 30px 15px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.5);  
-    width: 300px; 
-    height: 347px; 
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -1px -1px 5px rgba(0, 0, 0, 0);  
+    width: 280px; 
+    height: 327px; 
 }
 
 .box:hover {
-    transform: translateY(-10px);
+    transform: translateY(-2px);
 }
 .box-2{
     border: 1px solid white;
@@ -321,8 +321,8 @@ ul {
     align-items: flex-start;
     justify-content: flex-start;
     transition: transform 0.3s ease;
-    width: 270px; 
-    height: 317px; 
+    width: 250px; 
+    height: 297px; 
     gap: 10px;
     border-radius: 20px;
 }
@@ -333,8 +333,8 @@ ul {
 }
 
 .box-2 h3 {
-    margin: 10px 0px 10px 40px;
-    font-family: Montserrat;
+    margin: 5px 0px 10px 30px;
+    font-family:"Montserrat", sans-serif;
     font-size: 1.3em;
 }
 
@@ -342,7 +342,9 @@ ul {
     font-size: 0.9em;
     color: #fff;
     text-align: center;
-    font-family: Hind Madurai;
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     width: 90%;
     margin: 0 auto;
     font-size: 1rem;
@@ -423,20 +425,25 @@ ul {
     color: #000;
     font-size: clamp(1.8rem, 2.2vw + 1rem, 2.3rem);
     font-weight: 600;
-
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
   }
   .community-section p{ 
     font-size: clamp(0.9rem, 1vw + 0.5rem, 1.1rem);
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     color: #000;
     margin: 0 auto;
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 50%;
   }
   .community-btn {
     width: 150px;
     height: 80px;
     border-radius: 6px;
-    background: linear-gradient(180deg, #D9D9D9 -26.51%, #737373 100%);
+    background: linear-gradient(180deg, #D9D9D9 -20.51%, #737373 100%);
     color: #fff;
     cursor: pointer;
   }
