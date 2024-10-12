@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 
 body,
@@ -245,7 +246,7 @@ ul {
 }
 
 .image-section {
-  width: 100vw;
+  width: 100%;
 }
 
 .home-image-section {
@@ -1323,7 +1324,7 @@ background-color: #131212;
 
 
 .footer-section {
-  width: 100vw;
+  width: 100%;
   height: 60vh;
   background-color: #000;
   display: flex;
