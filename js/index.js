@@ -49,30 +49,30 @@ menuicon.addEventListener("click", ()=>{
 // photosanim();
 
 
-function iconanim(){
-  var navitems = document.querySelector(".nav-hover-items")
-  var itemslist = document.querySelector(".list-item-2")
-  var isnavvisible = true;
+// function iconanim(){
+//   var navitems = document.querySelector(".nav-hover-items")
+//   var itemslist = document.querySelector(".list-item-2")
+//   var isnavvisible = true;
  
-  itemslist.addEventListener("click", ()=>{
-    if (isnavvisible) {
-      navitems.style.display= "block"
-    } else{
-      navitems.style.display = "none"
-    }
-    isnavvisible = !isnavvisible
-    gsap.to(".nav-icon-content",{
-    duration: 0.4,
-    delay: 0.7,
-    yoyo:true,
-    stagger: {
-      amount: 0.3,
-      ease: "power2.inOut"
-    }
-    })
-  })
-}
-iconanim()
+//   itemslist.addEventListener("click", ()=>{
+//     if (isnavvisible) {
+//       navitems.style.display= "block"
+//     } else{
+//       navitems.style.display = "none"
+//     }
+//     isnavvisible = !isnavvisible
+//     gsap.to(".nav-icon-content",{
+//     duration: 0.4,
+//     delay: 0.7,
+//     yoyo:true,
+//     stagger: {
+//       amount: 0.3,
+//       ease: "power2.inOut"
+//     }
+//     })
+//   })
+// }
+// iconanim()
 
 // function scrollanim(){
 //   var relem = document.querySelectorAll(".right-elem")

@@ -10,13 +10,13 @@ html {
   height: 100%;
 }
 
-*::-webkit-scrollbar {
+/* *::-webkit-scrollbar {
   display: none;
 }
 
 * {
   scrollbar-width: none;
-}
+} */
 
 .navbar {
   display: flex;
