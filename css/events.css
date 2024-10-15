@@ -254,7 +254,7 @@ ul a:hover{
 
 
 .event-section{
-    width: 100vw;
+    width: 100%;
     min-height: 80vh;
 }
 
@@ -283,14 +283,14 @@ ul a:hover{
 
 .event-card {
     border: 1px solid #000;
-    width: 100%;
+    width: 430px;
     height: 400px;
     /* text-align: left; */
     display: flex;
     justify-content: space-between;
     align-items: start;
     flex-direction: column;
-    padding: 2rem;
+    overflow: hidden;
 }
 
 .event-date {
@@ -299,6 +299,7 @@ ul a:hover{
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
+    margin: 2em;
 }
 
 .event-title {
@@ -307,10 +308,14 @@ ul a:hover{
     font-family: "TiemposTextWeb", Helvetica, Arial, sans-serif;
     font-weight: 800;
     font-style: normal;
+    margin-bottom: 20px;
 }
 
 .event-card-part{
     gap: 40px;
+    margin-left: 50px;
+    position: relative;
+    z-index: 2;
 }
 .event-card-part hr{
  width: 40px;
@@ -333,92 +338,114 @@ ul a:hover{
     font-weight: 600;
     font-style: normal;
     padding-bottom: 20px;
+    margin-left: 70px;
+    position: relative;
+    z-index: 2;
 }
 
-/* Hover Image Effect */
 .event-card::before {
     content: '';
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 100%;  
     opacity: 0;
     transition: opacity 0.3s ease;
-    z-index: -1;
+
 }
-.event-card:hover p{
+/* .event-card:hover p{
  color: white;
 }
 .event-card:hover hr{
     background-color: white;
-   }
+   } */
 
-.event-card-1:hover {
-    background-image: url('../images/Future-of-Investing.jpg');
+.event-card-1 img {
+    /* background-image: url('../images/Future-of-Investing.jpg');
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+    background-size: cover; */
+    /* background-repeat: no-repeat;
+    color: white; */
+    width: 430px;
+    height: 400px;
+   opacity: 0;
+   position: absolute;
+   object-fit: cover;
+   z-index: 1; 
+   transition: opacity 0.5s ease;
 }
-.event-card-2:hover {
-    background-image: url('../images/IBM_BostonRdshow.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+.event-card-2 img{
+    width: 430px;
+    height: 400px;
+   opacity: 0;
+   position: absolute;
+   object-fit: cover;
+   z-index: 1; 
+   transition: opacity 0.5s ease;
 }
-.event-card-3:hover {
-    background-image: url('../images/Bloomberg-Tech.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+.event-card-3 img{
+    width: 430px;
+    height: 400px;
+   opacity: 0;
+   position: absolute;
+   object-fit: cover;
+   z-index: 1; 
+   transition: opacity 0.5s ease;
 }
-.event-card-4:hover {
-    background-image: url('../images/finance.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+.event-card-4 img{
+    width: 430px;
+    height: 400px;
+   opacity: 0;
+   position: absolute;
+   object-fit: cover;
+   z-index: 1; 
+   transition: opacity 0.5s ease;
 }
-.event-card-5:hover {
-    background-image: url('../images/Tile_Web_2024-Screentime.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+.event-card-5 img{
+    width: 430px;
+    height: 400px;
+   opacity: 0;
+   position: absolute;
+   object-fit: cover;
+   z-index: 1; 
+   transition: opacity 0.5s ease;
 }
-.event-card-6:hover {
-    background-image: url('../images/Tile-Image_420x500.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+.event-card-6 img{
+    width: 430px;
+    height: 400px;
+   opacity: 0;
+   position: absolute;
+   object-fit: cover;
+   z-index: 1; 
+   transition: opacity 0.5s ease;
 }
-.event-card-7:hover {
-    background-image: url('../images/Women-Money-Power.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+.event-card-7 img{
+    width: 430px;
+    height: 400px;
+   opacity: 0;
+   position: absolute;
+   object-fit: cover;
+   z-index: 1; 
+   transition: opacity 0.5s ease;
 }
-.event-card-8:hover {
-    background-image: url('../images/Tile-Image_420x500.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+.event-card-8 img{
+    width: 430px;
+    height: 400px;
+   opacity: 0;
+   position: absolute;
+   object-fit: cover;
+   z-index: 1; 
+   transition: opacity 0.5s ease;
 }
-.event-card-9:hover {
-    background-image: url('../images/IBM_BostonRdshow.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+.event-card-9 img{
+    width: 430px;
+    height: 400px;
+   opacity: 0;
+   position: absolute;
+   object-fit: cover;
+   z-index: 1; 
+   transition: opacity 0.5s ease;
 }
 
 
