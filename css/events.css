@@ -300,22 +300,28 @@ ul a:hover{
     font-weight: 100;
     font-style: normal;
     margin: 2em;
+    position: relative;
+    z-index: 2;
 }
 
 .event-title {
-    font-size: 3.1rem;
+    font-size: 2.95rem;
     font-weight: bold;
     font-family: "TiemposTextWeb", Helvetica, Arial, sans-serif;
     font-weight: 800;
     font-style: normal;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+}
+.event-card-1{
+    padding-top: 20px;
 }
 
 .event-card-part{
-    gap: 40px;
+    gap: 90px;
     margin-left: 50px;
     position: relative;
     z-index: 2;
+    margin-top: 20px;
 }
 .event-card-part hr{
  width: 40px;
@@ -337,7 +343,7 @@ ul a:hover{
     font-family: "TiemposTextWeb", Helvetica, Arial, sans-serif;
     font-weight: 600;
     font-style: normal;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
     margin-left: 70px;
     position: relative;
     z-index: 2;
@@ -354,12 +360,18 @@ ul a:hover{
     transition: opacity 0.3s ease;
 
 }
-/* .event-card:hover p{
+
+.event-card:hover .event-date, 
+.event-card:hover .event-card-part, 
+.event-card:hover .event-category {
+    color: white;
+}
+.event-card:hover p{
  color: white;
 }
 .event-card:hover hr{
     background-color: white;
-   } */
+   }
 
 .event-card-1 img {
     /* background-image: url('../images/Future-of-Investing.jpg');
