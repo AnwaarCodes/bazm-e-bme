@@ -302,6 +302,8 @@ ul a:hover{
     margin: 2em;
     position: relative;
     z-index: 2;
+    padding-top: 10px;
+    padding-left: 20px;
 }
 
 .event-title {
@@ -310,10 +312,7 @@ ul a:hover{
     font-family: "TiemposTextWeb", Helvetica, Arial, sans-serif;
     font-weight: 800;
     font-style: normal;
-    margin-bottom: 50px;
-}
-.event-card-1{
-    padding-top: 20px;
+    margin-bottom: 47px;
 }
 
 .event-card-part{
