@@ -30,7 +30,24 @@ let ul = document.querySelector("ul");
 
 menuicon.addEventListener("click", ()=>{
   ul.classList.toggle(".nav-list");
-})
+});
+
+
+
+//cards image display animation
+const eventCards = document.querySelectorAll('.event-card');
+
+eventCards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+        const img = card.querySelector('img');
+        img.style.opacity = '1'; 
+    });
+
+    card.addEventListener('mouseout', () => {
+        const img = card.querySelector('img');
+        img.style.opacity = '0';  
+    });
+});
 
 // function photosanim() {
 //   var text = document.querySelector(".text-over h2,h1,p")
