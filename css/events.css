@@ -307,7 +307,7 @@ ul a:hover{
 }
 
 .event-title {
-    font-size: 2.95rem;
+    font-size: 3.2rem;
     font-weight: bold;
     font-family: "TiemposTextWeb", Helvetica, Arial, sans-serif;
     font-weight: 800;
@@ -370,14 +370,9 @@ ul a:hover{
 }
 .event-card:hover hr{
     background-color: white;
-   }
+}
 
-.event-card-1 img {
-    /* background-image: url('../images/Future-of-Investing.jpg');
-    background-position: center;
-    background-size: cover; */
-    /* background-repeat: no-repeat;
-    color: white; */
+.event-card img {
     width: 430px;
     height: 400px;
    opacity: 0;
@@ -386,77 +381,52 @@ ul a:hover{
    z-index: 1; 
    transition: opacity 0.5s ease;
 }
-.event-card-2 img{
-    width: 430px;
-    height: 400px;
-   opacity: 0;
-   position: absolute;
-   object-fit: cover;
-   z-index: 1; 
-   transition: opacity 0.5s ease;
+
+@media (min-width: 640px) and (max-width: 960px) {
+    .events-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .event-card img{
+        width: 430px;
+        height: 400px;
+    }
 }
-.event-card-3 img{
-    width: 430px;
-    height: 400px;
-   opacity: 0;
-   position: absolute;
-   object-fit: cover;
-   z-index: 1; 
-   transition: opacity 0.5s ease;
+@media (max-width: 640px) {
+    .events-container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        width: fit-content; 
+        margin: 0 auto;
+    }
+    .event-title {
+        font-size: 2.8rem;
+    }
+
+    .event-category {
+        margin-left: 50px;
+    }
+
+    .event-card img{
+        width: 430px;
+        height: 400px;
+    }
 }
-.event-card-4 img{
-    width: 430px;
-    height: 400px;
-   opacity: 0;
-   position: absolute;
-   object-fit: cover;
-   z-index: 1; 
-   transition: opacity 0.5s ease;
-}
-.event-card-5 img{
-    width: 430px;
-    height: 400px;
-   opacity: 0;
-   position: absolute;
-   object-fit: cover;
-   z-index: 1; 
-   transition: opacity 0.5s ease;
-}
-.event-card-6 img{
-    width: 430px;
-    height: 400px;
-   opacity: 0;
-   position: absolute;
-   object-fit: cover;
-   z-index: 1; 
-   transition: opacity 0.5s ease;
-}
-.event-card-7 img{
-    width: 430px;
-    height: 400px;
-   opacity: 0;
-   position: absolute;
-   object-fit: cover;
-   z-index: 1; 
-   transition: opacity 0.5s ease;
-}
-.event-card-8 img{
-    width: 430px;
-    height: 400px;
-   opacity: 0;
-   position: absolute;
-   object-fit: cover;
-   z-index: 1; 
-   transition: opacity 0.5s ease;
-}
-.event-card-9 img{
-    width: 430px;
-    height: 400px;
-   opacity: 0;
-   position: absolute;
-   object-fit: cover;
-   z-index: 1; 
-   transition: opacity 0.5s ease;
+
+@media (min-width: 640px) and (max-width: 960px) {
+    .events-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        width: fit-content; 
+        margin: 0 auto;
+    }
+    .event-title {
+        font-size: 2.8rem;
+    }
+
+    .event-category {
+        margin-left: 30px;
+    }
 }
 
 

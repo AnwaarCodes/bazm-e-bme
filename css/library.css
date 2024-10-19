@@ -296,7 +296,7 @@ body {
 
 .library-boxes-section .library-heading-2 {
     margin-top: 0;
-    margin-left: 50px;
+    margin-left: 150px;
     font-size: 1.3rem;
     font-weight: bold;
     color: #333;
@@ -310,7 +310,7 @@ body {
     grid-gap: 20px;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 60%;
     margin-top: 20px;
     margin: auto;
     @media (width >= 40em /*640px*/) {
