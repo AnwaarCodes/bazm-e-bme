@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+     body {
+    margin: 0;
+    font-family: sans-serif;
+    background: url('your-background-image.jpg') no-repeat center center fixed; /* Example for background image */
+    background-size: cover;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.1); /* More transparency */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Ensures cross-browser compatibility */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    border-radius: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 10px 20px; /* Adds some spacing around the navbar */
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-logo .img-1 {
+    height: 70px;
+    margin-top: -15px;
+}
+
+.navbar-logo .img-2 {
+    height: 40px;
+    width: 150px;
+    margin-right: 10px;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-list li {
+    margin-right: 20px;
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-list li a:hover {
+    color: #ff9f43;
+}
+
+.login-button {
+    background: rgba(255, 255, 255, 0.25); /* Semi-transparent button */
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #ff9f43;
+    color: #fff;
+}
+
+.login-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-navbar .login-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.login-navbar .login-text {
+    font-size: 15px;
+    color: white;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.login-navbar .login-text:hover {
+    color: #ff9f43;
+}
+
+    </style>
+</head>
+<body>
+     <nav class="navbar">
+        <div class="navbar-logo">
+            <img class="img-1" src="./images/logoImg.png" alt="Bazm-e-BAME Logo">
+            <img class="img-2" src="./images/text.png" alt="">
+        </div>
+        <ul class="navbar-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="#">Jobs & Opportunity</a></li>
+            <li><a href="blog.html">Blogs & Articles</a></li>
+            <li><a href="library.html">Digital Library</a></li>
+        </ul>
+        <div class="login-navbar">
+            <a href="login.html"><img class="login-img" src="./images/loginIcon.png" alt=""></a>
+            <a href="login.html"><h2 class="login-text">Login Here</h2></a>
+        </div>
+    </nav>
+</body>
+</html>
